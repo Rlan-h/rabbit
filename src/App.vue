@@ -3,9 +3,13 @@
 
 <template>
   <RouterView />
+  <div class="test">test</div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.test {
+  color: $helpColor;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
