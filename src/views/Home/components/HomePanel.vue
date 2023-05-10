@@ -3,7 +3,7 @@ defineProps({
   title: {
     type: String
   },
-  subtitle: {
+  subTitle: {
     type: String
   }
 })
@@ -16,7 +16,7 @@ defineProps({
       <div class="head">
         <!-- 主标题和副标题 -->
         <h3>
-          {{title}}<small>{{subtitle}}</small>
+          {{title}}<small>{{subTitle}}</small>
         </h3>
       </div>
       <!-- 主体内容区域 -->
