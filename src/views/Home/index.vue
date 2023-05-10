@@ -15,10 +15,7 @@ import HomePanel from './components/HomePanel.vue'
   <HomeNew />
   <HomeHot />
   <homeProduct />
-  <HomePanel title="新鲜好物" sub-title="新鲜好物 商品多多">
+  <HomePanel title="新鲜好物" sub-title="新鲜好物 商品多多"></HomePanel>
+  <HomePanel title="人气推荐" sub-title="人气推荐 商品多多"></HomePanel>
 
-  </HomePanel>
-  <HomePanel title="人气推荐" sub-title="人气推荐 商品多多">
-
-  </HomePanel>
 </template>
