@@ -3,10 +3,13 @@
 
 import { ref } from 'vue'
 import { loginAPI } from '@/apis/user'
-// import 'element-plus/es/components/message/style/css'
 import 'element-plus/theme-chalk/el-message.css'
 import { ElMessage } from 'element-plus'
 import { useRouter } from 'vue-router'
+
+import { useUserStore } from '@/stores/user'
+
+const userStore = useUserStore()
 
 // 1.准备表单对象
 const form = ref({
@@ -49,8 +52,9 @@ const doLogin = async () => {
     console.log(valid)
     // 以valid作为是否登录的条件，通过校验才执行登录逻辑
     if (valid) {
-      const res = await loginAPI(account, password)
-      console.log(res)
+      // const res = await loginAPI(account, password)
+      // console.log(res)
+      await userStore.getUserInfo(account, password)
       // 1.提示用户
       ElMessage({ type: 'success', message: '登录成功' })
       // 2.跳转首页
