@@ -54,27 +54,22 @@ onMounted(() => {
         background: $xtxColor;
         color: #fff;
       }
-
       &:last-child {
         margin-right: 80px;
       }
     }
   }
-
   .box {
     display: flex;
-
     .cover {
       width: 240px;
       height: 610px;
       margin-right: 10px;
       position: relative;
-
       img {
         width: 100%;
         height: 100%;
       }
-
       .label {
         width: 188px;
         height: 66px;
@@ -87,15 +82,12 @@ onMounted(() => {
         left: 0;
         top: 50%;
         transform: translate3d(0, -50%, 0);
-
         span {
           text-align: center;
-
           &:first-child {
             width: 76px;
             background: rgba(0, 0, 0, 0.9);
           }
-
           &:last-child {
             flex: 1;
             background: rgba(0, 0, 0, 0.7);
@@ -108,17 +100,14 @@ onMounted(() => {
       width: 990px;
       display: flex;
       flex-wrap: wrap;
-
       li {
         width: 240px;
         height: 300px;
         margin-right: 10px;
         margin-bottom: 10px;
-
         &:nth-last-child(-n + 4) {
           margin-bottom: 0;
         }
-
         &:nth-child(4n) {
           margin-right: 0;
         }

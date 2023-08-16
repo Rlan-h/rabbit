@@ -28,7 +28,7 @@ defineProps({
 <style scoped lang='scss'>
 .home-panel {
   background-color: #fff;
-
+  font-size: 24px;
   .head {
     padding: 40px 0;
     display: flex;
